@@ -1,0 +1,38 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100svh;
+  max-width: 720px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.header {
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+}
+
+.title {
+  font-size: 24px;
+  margin: 0;
+}
+
+.subtitle {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: var(--text);
+}
+
+.status {
+  padding: 12px 20px;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .page {
+    max-width: 100%;
+  }
+}
